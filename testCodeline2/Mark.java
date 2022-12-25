@@ -1,7 +1,7 @@
 package testCodeline2;
 
 public class Mark {
-	private int mathMark;
+	private int mathDegree;
 	private int arabicMark;
 	private int englishMark;
 	
