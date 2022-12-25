@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TaskTest {
-	public static final String green = "\u001B[92m";
-	public static final String ANSI_BLUE = "\u001B[96m";
-	public static final String white = "\033[37m";
-	public static final String ANSI_BLACK = "\u001B[30m";
-	public static final String ANSI_purple = "\033[35m";
-	public static final String cyan = "\033[36m";
-	public static final String red = "\033[31m";
+	//public static final String green = "\u001B[92m";
+	//public static final String ANSI_BLUE = "\u001B[96m";
+	//public static final String white = "\033[37m";
+	//public static final String ANSI_BLACK = "\u001B[30m";
+	//public static final String ANSI_purple = "\033[35m";
+	//public static final String cyan = "\033[36m";
+	//public static final String red = "\033[31m";
 
 	public static void main(String[] args) {
 
