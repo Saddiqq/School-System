@@ -123,9 +123,9 @@ public class TaskTest {
 				System.out.println(white + "School Name :" + school.getSchoolName());
 				System.out.println(white + "School ID :" + school.getSchoolId());
 				System.out.println(cyan + "==================== Department Details ====================");
-				for (Department dept : departmentList) {
-					System.out.println(white + " Department Name : " + dept.getDepartementName());
-					System.out.println(white + " Department ID : " + dept.getDepartementId());
+				//for (Department dept : departmentList) {
+				//System.out.println(white + " Department Name : " + dept.getDepartementName());
+					//System.out.println(white + " Department ID : " + dept.getDepartementId());
 
 					//for (Teacher teach : dept.teacherList) {
 						//System.out.println(cyan + "==================== Teacher Details ====================");
