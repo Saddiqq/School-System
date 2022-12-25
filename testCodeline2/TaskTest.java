@@ -23,23 +23,18 @@ public class TaskTest {
 		System.out.println("                                       ");
 		System.out.print(ANSI_BLUE + "Enter School Name: ");
 		String name = sc.next();
-
 		school.setSchoolName(name);
-
 		System.out.print(ANSI_BLUE + "Enter School location: ");
 		String location = sc.next();
 		school.setSchoolLocation(location);
-
 		System.out.print(ANSI_BLUE + "Enter School ID: ");
 		int id = sc.nextInt();
 		school.setSchoolId(id);
-
 		Boolean condtion1 = true;
 		Boolean condtion2 = true;
 		Boolean condtion3 = true;
 		Boolean condition4 = true;
 		Boolean condition5 = true;
-
 		while (condtion1) {
 			///////// Department//////////
 			Department department1 = new Department();
