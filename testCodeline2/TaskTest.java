@@ -137,10 +137,10 @@ public class TaskTest {
 							System.out.println(white + "Student Name : " + stdn.getStudentName());
 							System.out.println(white + " Student ID :" + stdn.getStudentID());
 							System.out.println(cyan + "==================== Course Details ====================");
-							for (Course course : stdn.courseList) {
-							System.out.println(white + "Course Name : " + course.getCourseName());
-							System.out.println("Course ID : " + course.getCourseID());
-							System.out.println("Enter Mark : " + course.mark1.getmathMark());
+							//for (Course course : stdn.courseList) {
+							//System.out.println(white + "Course Name : " + course.getCourseName());
+							//System.out.println("Course ID : " + course.getCourseID());
+							//System.out.println("Enter Mark : " + course.mark1.getmathMark());
 
 						}
 					}
@@ -158,7 +158,7 @@ public class TaskTest {
 
 		}
 	}
-	sc.close();
+	//sc.close();
 
 }
 }
