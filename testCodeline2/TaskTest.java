@@ -33,7 +33,7 @@ public class TaskTest {
 		Boolean condtion1 = true;
 		Boolean condtion2 = true;
 		Boolean condtion3 = true;
-		Boolean condition4 = true;
+		////////Boolean condition4 = true;
 		Boolean condition5 = true;
 		while (condtion1) {
 			///////// Department//////////
