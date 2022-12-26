@@ -4,16 +4,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class TaskTest {
+	
 	public static final String green = "\u001B[92m";
 	public static final String ANSI_BLUE = "\u001B[96m";
 	public static final String white = "\033[37m";
-	//public static final String ANSI_BLACK = "\u001B[30m";
-	//public static final String ANSI_purple = "\033[35m";
-	//public static final String cyan = "\033[36m";
-	//public static final String red = "\033[31m";
-
+	public static final String ANSI_BLACK = "\u001B[30m";
+	public static final String ANSI_purple = "\033[35m";
+	public static final String cyan = "\033[36m";
+	public static final String red = "\033[31m";
+	
 	public static void main(String[] args) {
-
+        
 		School school = new School();
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Department> departmentList = new ArrayList<Department>();
@@ -23,21 +24,26 @@ public class TaskTest {
 		System.out.println("                                       ");
 		System.out.print(ANSI_BLUE + "Enter School Name: ");
 		String name = sc.next();
+
 		school.setSchoolName(name);
+
 		System.out.print(ANSI_BLUE + "Enter School location: ");
 		String location = sc.next();
 		school.setSchoolLocation(location);
+
 		System.out.print(ANSI_BLUE + "Enter School ID: ");
 		int id = sc.nextInt();
 		school.setSchoolId(id);
+
 		Boolean condtion1 = true;
 		Boolean condtion2 = true;
 		Boolean condtion3 = true;
-		////////Boolean condition4 = true;
+		Boolean condition4 = true;
 		Boolean condition5 = true;
+
 		while (condtion1) {
 			///////// Department//////////
-			Department department1 = new Department();
+			Department department1 = new Department("HR",511);
 			System.out.print(ANSI_BLUE + "Enter Department Name: ");
 			department1.setDepartementName(sc.next());
 			System.out.print(ANSI_BLUE + "Enter Department Size: ");
@@ -67,9 +73,9 @@ public class TaskTest {
 						System.out.print(ANSI_BLUE + "Enter Course ID: ");
 						course1.setCourseID(sc.nextInt());
 						///////// Mark//////////
-						System.out.print(ANSI_BLUE + "Enter Mark: ");
+						System.out.print(ANSI_BLUE + "Enter Math Mark: ");
 						course1.mark1.setMathMark(sc.nextInt());
-						student.courseList.add(course1);
+						student.courseList.add(course1);	
 						System.out.println(green
 								+ "Do you want to add another Course? Press (1) if yes, else Press (2) to continue.");
 						int option4 = sc.nextInt();
@@ -123,24 +129,24 @@ public class TaskTest {
 				System.out.println(white + "School Name :" + school.getSchoolName());
 				System.out.println(white + "School ID :" + school.getSchoolId());
 				System.out.println(cyan + "==================== Department Details ====================");
-				//for (Department dept : departmentList) {
-				//System.out.println(white + " Department Name : " + dept.getDepartementName());
-					//System.out.println(white + " Department ID : " + dept.getDepartementId());
+				for (Department dept : departmentList) {
+					System.out.println(white + " Department Name : " + dept.getDepartementName());
+					System.out.println(white + " Department ID : " + dept.getDepartementId());
 
-					//for (Teacher teach : dept.teacherList) {
-						//System.out.println(cyan + "==================== Teacher Details ====================");
-						//System.out.println(white + " Teacher Name : " + teach.getTeacherName());
-						//System.out.println(white + " Teacher ID : " + teach.getTeacherID());
+					for (Teacher teach : dept.teacherList) {
+						System.out.println(cyan + "==================== Teacher Details ====================");
+						System.out.println(white + " Teacher Name : " + teach.getTeacherName());
+						System.out.println(white + " Teacher ID : " + teach.getTeacherID());
 						// System.out.println("==================== Student List ====================");
 						for (Student stdn : teach.studentList) {
 							System.out.println(cyan + "==================== Student Details ====================");
 							System.out.println(white + "Student Name : " + stdn.getStudentName());
 							System.out.println(white + " Student ID :" + stdn.getStudentID());
 							System.out.println(cyan + "==================== Course Details ====================");
-							//for (Course course : stdn.courseList) {
-							//System.out.println(white + "Course Name : " + course.getCourseName());
-							//System.out.println("Course ID : " + course.getCourseID());
-							//System.out.println("Enter Mark : " + course.mark1.getmathMark());
+							for (Course course : stdn.courseList) {
+							System.out.println(white + "Course Name : " + course.getCourseName());
+							System.out.println("Course ID : " + course.getCourseID());
+							System.out.println("Enter Mark : " + course.mark1.getmathMark());
 
 						}
 					}
@@ -158,7 +164,7 @@ public class TaskTest {
 
 		}
 	}
-	//sc.close();
+	sc.close();
 
 }
 }

@@ -1,10 +1,13 @@
 package testCodeline2;
 
 public class Mark {
-	private int mathDegree;
+	private int mathMark;
 	private int arabicMark;
 	private int englishMark;
-	private int chemistryMark;
+	
+	
+	
+	
 ////Math Marks////
 	public void setMathMark(int mathMark) {
 		this.mathMark = mathMark;		
